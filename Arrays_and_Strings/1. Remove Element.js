@@ -33,3 +33,4 @@ const removeEl = (nums, val) => {
 };
 
 console.log(removeEl([0,1,2,2,3,0,4,2], 2));
+console.log(removeEl([3,2,2,3], 3));
