@@ -32,3 +32,4 @@ const removeDuplicates = (nums) => {
 };
 console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4])); //expected output 5 [0, 1, 2, 3, 4]
 console.log(removeDuplicates([1,1,2])) //expected output 2 [1, 2, _, _]
+console.log(removeDuplicates([3, 3, 3, 5, 5, 8, 8, 10])) //expected output 4 [3, 5, 8, 10, _, _]
