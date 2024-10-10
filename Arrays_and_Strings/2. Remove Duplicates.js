@@ -28,7 +28,7 @@ const removeDuplicates = (nums) => {
         k++;
     }
   } 
-  return results;
+  return k;
 };
 console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4])); //expected output 5 [0, 1, 2, 3, 4]
 console.log(removeDuplicates([1,1,2])) //expected output 2 [1, 2, _, _]
