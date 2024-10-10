@@ -22,14 +22,14 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */ 
 
 const removeEl = (nums, val) => {
-  let k = 0;
-  for(let i = 0; i < nums.length; i++) {
-    if(nums[i] !== val) {
-      nums[k] = nums[i];
-      k++;
+  let k = 0; //initialize the pointer to keep track of valid elements
+  for(let i = 0; i < nums.length; i++) { // Iterate through each element of the nums array
+    if(nums[i] !== val) { // check if the current element is a valid element
+      nums[k] = nums[i]; // Move the valid element to position k in the array nums
+      k++; // increament the pointer to allow other valid elements to be added to the pointer
     }
   }
-  return k;
+  return k; //return k
 };
 
 console.log(removeEl([0,1,2,2,3,0,4,2], 2));
