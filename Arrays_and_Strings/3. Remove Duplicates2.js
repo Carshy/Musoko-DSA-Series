@@ -22,14 +22,13 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 const removeDuplicates2 = (nums) => {
-  let results = [];
+  let k = 0;
   for(let i = 0; i < nums.length; i++) {
     if(nums[i] !== 2 * (nums[i - 1])) {
-      results.push(nums[i]);
-    //   nums[k] = nums[i];
-    //   k++;
+      nums[k] = nums[i];
+      k++;
     }
   }
-  return results;
+  return k;
 }
 console.log(removeDuplicates2([1,1,1,2,2,3])) // Expected Output 5 [1, 1, 2, 2, 3]
