@@ -31,7 +31,7 @@ const removeDuplicates2 = (nums) => {
       count = 1;
     }
 
-    if(nums[i] <= 2) {
+    if(count <= 2) {
       nums[k] = nums[i];
       k++;
     }
