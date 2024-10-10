@@ -22,5 +22,9 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 const removeDuplicates2 = (nums) => {
+  let k = 0;
+  for(let i = 0; i < nums.length; i++) {
     
+  }
 }
+console.log(removeDuplicates2([1,1,1,2,2,3])) // Expected Output 5 [1, 1, 2, 2, 3]
