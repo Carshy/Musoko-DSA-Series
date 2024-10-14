@@ -24,3 +24,4 @@ const validPalindrome = (s) => {
 };
 console.log(validPalindrome("A man, a plan, a canal: Panama")); //true
 console.log(validPalindrome("race a car")); //false
+console.log(validPalindrome("121")); //true
