@@ -17,9 +17,9 @@ Explanation: "raceacar" is not a palindrome.
 
 const validPalindrome = (s) => {
   let strLower = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-  
-  return strLower;
+  let strReverse = strLower.split('').reverse().join('');
+
+  return strLower === strReverse ? true : false;
 
 };
 console.log(validPalindrome("A man, a plan, a canal: Panama")); //true
-console.log(validPalindrome("race a car")); //false
