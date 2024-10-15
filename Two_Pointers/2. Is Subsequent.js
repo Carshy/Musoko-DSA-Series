@@ -12,4 +12,7 @@ Input: s = "axc", t = "ahbgdc"
 Output: false
 */
 
-c
+const isSubsequent = (s, t) => {
+
+};
+console.log(isSubsequent("abc", "ahbgdc"))
