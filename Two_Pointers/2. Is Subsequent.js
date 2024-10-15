@@ -27,4 +27,5 @@ const isSubsequent = (s, t) => {
   }
   return i === s.length;
 };
-console.log(isSubsequent("abc", "ahbgdc"))
+console.log(isSubsequent("abc", "ahbgdc")); //true
+console.log(isSubsequent("axc", "ahbgdc")); //false

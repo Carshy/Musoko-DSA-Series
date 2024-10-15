@@ -24,6 +24,9 @@
 4. [Container with most water](https://leetcode.com/problems/container-with-most-water)
 
 5. [3 Sum](https://leetcode.com/problems/3sum)
+6. [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/)
+7. [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
+
 
 
 ## Sliding Window
