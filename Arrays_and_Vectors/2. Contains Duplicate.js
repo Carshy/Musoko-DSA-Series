@@ -32,9 +32,10 @@ Output: true
 
 const containDuplicate = (nums) => {
   let map = {};
-  let count = 1;
   for(let i = 0; i < nums.length; i++) {
-    
+    if(map[nums[i]] !== undefined) {
+      return true;
+    }
   }
 }
 console.log(containDuplicate([1,2,3,1])); // true
