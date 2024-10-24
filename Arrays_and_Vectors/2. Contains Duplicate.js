@@ -33,10 +33,10 @@ Output: true
 const containDuplicate = (nums) => {
   let seen = new Set;
   for(let i = 0; i < nums.length; i++) {
-    if(seen.has(nums[i])) {
+    if(seen[nums[i]] !== undefined) {
       return true;
     }
-    seen.add(nums[i]);
+    seen[nums[i]] = i;
   }
   return false;
 }
