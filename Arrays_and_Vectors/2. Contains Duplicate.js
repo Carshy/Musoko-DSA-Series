@@ -31,12 +31,12 @@ Output: true
 */ 
 
 const containDuplicate = (nums) => {
-  let map = {};
+  let seen = new Set;
   for(let i = 0; i < nums.length; i++) {
-    if(map[nums[i]] !== undefined) {
+    if(seen.has(nums[i])) {
       return true;
     }
-    map[nums[i]] = i;
+    seen.add(nums[i]);
   }
   return false;
 }
