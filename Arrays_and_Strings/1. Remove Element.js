@@ -46,4 +46,4 @@ const validEl = (nums, val) => {
   return k;
 }
 console.log(validEl([0,1,2,2,3,0,4,2], 2));
-// console.log(validEl([3,2,2,3], 3));
+console.log(validEl([3,2,2,3], 3));
