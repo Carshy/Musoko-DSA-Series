@@ -20,16 +20,27 @@ Explanation: Your function should return k = 5, with the first five elements of 
 It does not matter what you leave beyond the returned k (hence they are underscores).
 */ 
 
+// const removeDuplicates = (nums) => {
+//   let k = 0;
+//   for(let i = 0; i < nums.length; i++) {
+//     if(nums[i] !== nums[i - 1]) {
+//         nums[k] = nums[i];
+//         k++;
+//     }
+//   } 
+//   return k;
+// };
+
 const removeDuplicates = (nums) => {
   let k = 0;
   for(let i = 0; i < nums.length; i++) {
     if(nums[i] !== nums[i - 1]) {
-        nums[k] = nums[i];
-        k++;
+      nums[k] = nums[i];
+      k++;
     }
-  } 
+  }
   return k;
-};
+}
 console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4])); //expected output 5 [0, 1, 2, 3, 4]
 console.log(removeDuplicates([1,1,2])) //expected output 2 [1, 2, _, _]
 console.log(removeDuplicates([3, 3, 3, 5, 5, 8, 8, 10])) //expected output 4 [3, 5, 8, 10, _, _]
