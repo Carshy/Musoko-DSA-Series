@@ -26,6 +26,8 @@
 5. [3 Sum](https://leetcode.com/problems/3sum)
 6. [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/)
 7. [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/)
+8. [Delete Operations for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/)
+9. [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/)
 
 
 
