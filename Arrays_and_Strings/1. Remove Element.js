@@ -21,15 +21,27 @@ Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 */ 
 
+// const validEl = (nums, val) => {
+//   let k = 0;
+//   for(let i = 0; i < nums.length; i++) {
+//     if (nums[i] !== val) {
+//       nums[k] = nums[i];
+//       k++;
+//     }
+//   }
+//   return k;
+// }
+
 const validEl = (nums, val) => {
   let k = 0;
   for(let i = 0; i < nums.length; i++) {
-    if (nums[i] !== val) {
+    if(nums[i] !== val) {
       nums[k] = nums[i];
       k++;
     }
   }
   return k;
 }
+
 console.log(validEl([0,1,2,2,3,0,4,2], 2));
 console.log(validEl([3,2,2,3], 3));
