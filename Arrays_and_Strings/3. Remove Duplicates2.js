@@ -21,22 +21,41 @@ Explanation: Your function should return k = 7, with the first seven elements of
 It does not matter what you leave beyond the returned k (hence they are underscores).
 */
 
+// const removeDuplicates2 = (nums) => {
+//   let k = 0;
+//   let count = 1;
+//   for(let i = 0; i < nums.length; i++) {
+//     if(nums[i] === nums[i - 1]) {
+//       count++;
+//     } else {
+//       count = 1;
+//     }
+
+//     if(count <= 2) {
+//       nums[k] = nums[i];
+//       k++;
+//     }
+//   }
+//   return k;
+// }
+
 const removeDuplicates2 = (nums) => {
-  let k = 0;
+  let results = [];
   let count = 1;
   for(let i = 0; i < nums.length; i++) {
     if(nums[i] === nums[i - 1]) {
       count++;
     } else {
-      count = 1;
+      count = 1
     }
-
     if(count <= 2) {
-      nums[k] = nums[i];
-      k++;
+      results.push(nums[i])
+      // nums[k] = nums[i];
+      // k++;
     }
   }
-  return k;
+  return results;
 }
+
 console.log(removeDuplicates2([1,1,1,2,2,3])) // Expected Output 5 [1, 1, 2, 2, 3]
 console.log(removeDuplicates2([0,0,1,1,1,1,2,3,3])) // Expected Output 5 [1, 1, 2, 2, 3]
