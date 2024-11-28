@@ -49,12 +49,11 @@ const removeDuplicates2 = (nums) => {
       count = 1
     }
     if(count <= 2) {
-      results.push(nums[i])
-      // nums[k] = nums[i];
-      // k++;
+      nums[k] = nums[i];
+      k++;
     }
   }
-  return results;
+  return k;
 }
 
 console.log(removeDuplicates2([1,1,1,2,2,3])) // Expected Output 5 [1, 1, 2, 2, 3]
