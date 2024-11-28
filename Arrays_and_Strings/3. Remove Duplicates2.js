@@ -40,7 +40,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 // }
 
 const removeDuplicates2 = (nums) => {
-  let results = [];
+  let k = 0;
   let count = 1;
   for(let i = 0; i < nums.length; i++) {
     if(nums[i] === nums[i - 1]) {
