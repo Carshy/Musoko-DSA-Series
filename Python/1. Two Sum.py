@@ -13,4 +13,4 @@ def twoSum(nums, target):
       return [map[diff], i]
     map[num] = i
 print(twoSum([2,7,11,15], 9))
-print(twoSum([4,8,3,5, 7], 10))
+# print(twoSum([4,8,3,5, 7], 10))
