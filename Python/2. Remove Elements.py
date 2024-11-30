@@ -12,5 +12,5 @@ def validEl(nums, val):
     if num != val:
       nums[k] = num
       k += 1
-  return k
+    return k
 print(validEl([3,2,2,3], 3)) ## 2
