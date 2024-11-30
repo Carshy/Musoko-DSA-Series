@@ -7,10 +7,11 @@ Change the array nums such that the first k elements of nums contain the element
 Return k.
 """
 def validEl(nums, val):
-  k = 0
+  results = []
   for i, num in enumerate(nums):
     if num != val:
-      nums[k] = num
-      k += 1
-  return k
+      results.append(num)
+    #   nums[k] = num
+    #   k += 1
+  return results
 print(validEl([3,2,2,3], 3)) ## 2
