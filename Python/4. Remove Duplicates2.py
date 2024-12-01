@@ -33,4 +33,4 @@ def removeDuplicates2(nums):
       nums[k] = nums[i]
       k += 1
   return k
-# print(removeDuplicates2([0,0,1,1,1,1,2,3,3]))
+print(removeDuplicates2([0,0,1,1,1,1,2,3,3]))
