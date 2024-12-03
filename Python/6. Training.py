@@ -5,4 +5,4 @@
 def wordsCon(words):
   results = [word.upper() for word in words if len(word) > 2 ]
   return results
-print(wordsCon["apple", "banana", "mango", "is", "he", "person"])
+print(wordsCon(["apple", "banana", "mango", "is", "he", "person"]))
