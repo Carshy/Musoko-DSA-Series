@@ -5,4 +5,4 @@ def numList(nums):
   numbers = []
   for i in range(nums):
     return numbers.append(i)
-print(numList([10]))
+print(numList(10))
