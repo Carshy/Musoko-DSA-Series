@@ -2,7 +2,7 @@
 
 # have a list of words, I want you to filter out the short words and then convert the longer words to uppercase
 
-def wordsCon(words):
-  results = [word.upper() for word in words if len(word) > 2 ]
-  return results
-print(wordsCon(["apple", "banana", "mango", "is", "he", "person"]))
+def highNum(nums):
+  for i in nums:
+    return nums[-1]
+print(highNum([4, 5, 7, 9, 12]))
