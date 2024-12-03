@@ -4,5 +4,6 @@
 def numList(nums):
   numbers = []
   for i in range(nums):
-    return numbers.append(i)
+    numbers.append(i)
+  return numbers
 print(numList(10))
