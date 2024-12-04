@@ -3,5 +3,5 @@
 # have a list of words, I want you to filter out the short words and then convert the longer words to uppercase
 
 def highNum(nums):
-  return max(nums)
+  maxN = [i for i in nums if i == max(nums)]
 print(highNum([4, 5, 7, 9, 12, 13]))
