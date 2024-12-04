@@ -4,4 +4,5 @@
 
 def highNum(nums):
   maxN = [i for i in nums if i == max(nums)]
+  return maxN
 print(highNum([4, 5, 7, 9, 12, 13]))
