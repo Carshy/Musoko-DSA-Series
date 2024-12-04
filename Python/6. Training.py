@@ -5,4 +5,4 @@
 def highNum(nums):
   for i in nums:
     return nums[-1]
-print(highNum([4, 5, 7, 9, 12]))
+print(highNum([4, 5, 7, 9, 12, 13]))
