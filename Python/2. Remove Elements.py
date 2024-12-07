@@ -23,3 +23,4 @@ def validElements(nums, val):
       k += 1
   return k
 print(validElements([3, 2, 2, 3], 3))
+print(validElements([5, 4, 2, 2, 5], 5))
