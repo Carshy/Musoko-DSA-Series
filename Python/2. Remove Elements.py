@@ -16,9 +16,10 @@ Return k.
 # print(validEl([3,2,2,3], 3)) ## 2
 
 def validElements(nums, val):
-  results = []
-  for i, num in enumerate(nums):
-    if num != val:
-      results.append(num)
-      return results
+  k = 0
+  for i in range(len(nums)):
+    if nums[i] != val:
+      nums[k] = nums[i]
+      k += 1
+  return k
 print(validElements([3, 2, 2, 3], 3))
