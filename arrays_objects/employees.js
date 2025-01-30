@@ -74,7 +74,7 @@ const employeeGenarateReport = (employees, companies) => {
 
         return report;
     });
-    // console.log("Generate Employee Report", reports)
+    console.log("Generate Employee Report", reports)
     return reports;
 };
 
