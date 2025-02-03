@@ -15,13 +15,20 @@ Output: false
 Explanation: "raceacar" is not a palindrome.
 */
 
+// const validPalindrome = (s) => {
+//   let strLower = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+//   let strReverse = strLower.split('').reverse().join('');
+
+//   return strLower === strReverse ? true : false;
+
+// };
 const validPalindrome = (s) => {
-  let strLower = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-  let strReverse = strLower.split('').reverse().join('');
+  let strToLower = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  let strReverse = strToLower.split('').reverse().join('');
 
-  return strLower === strReverse ? true : false;
+  return strToLower === strReverse ? true : false
+}
 
-};
 console.log(validPalindrome("A man, a plan, a canal: Panama")); //true
 console.log(validPalindrome("race a car")); //false
 console.log(validPalindrome("121")); //true
