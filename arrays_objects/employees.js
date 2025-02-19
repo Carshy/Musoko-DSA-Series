@@ -51,32 +51,59 @@ const companies = [
   }
 ];
 
-const employeeGenarateReport = (employees, companies) => {
-    //   Map through employees and generate reports for each employee
-    const reports = employees.map((employee) => {
-        // get a company for each employee
-        const company = companies.find((c) => c.id === employee.companyID);
+const generateEmployReport = (employees, companies) => {
+  const reports = employees.map((employee) => {
+    let company = companies.find((c) => c.id === employee.companyID);
 
-        // Calculate contributions
-        const employeeContrib = employee.salary * 0.05;
-        const employerContrb = employee.salary * 0.15;
+    const employeeContrib = employee.salary * 0.05;
+    const employerContrib = employee.salary * 0.15
 
-        const report = {
-          employeeID: employee.id,
-          name: `${employee.first_name} ${employee.last_name}`,
-          companyName: company ? company.name : "Company does not Exist",
-          companyAddress: company ? company.address : "Unknown Address",
-          salary: employee.salary,
-          employeeContribution: employeeContrib.toFixed(2),
-          employerContribution: employerContrb.toFixed(2),
-          nationality: employee.nationality
-        }
+    const report = {
+      Employee_ID: employee.id,
+      Employee_fName: employee.first_name,
+      Employee_lName: employee.last_name,
+      CompanyID: employee.companyID,
+      CompanyName: company ? company.name : "Company does not exist",
+      CompanyAddress: company ? company.address : "Company Does not exist",
+      salary: employee.salary,
+      Employee_Contribution: employeeContrib.toFixed(2),
+      Employer_Contrib: employerContrib.toFixed(2),
+      Nationality: employee.nationality
 
-        return report;
-    });
-    console.log("Generate Employee Report", reports)
-    return reports;
-};
+    }
+    return report
+  });
+  console.log(reports, "Get Reports")
+  return reports
+}
+generateEmployReport(employees, companies)
+
+// const employeeGenarateReport = (employees, companies) => {
+//     //   Map through employees and generate reports for each employee
+//     const reports = employees.map((employee) => {
+//         // get a company for each employee
+//         const company = companies.find((c) => c.id === employee.companyID);
+
+//         // Calculate contributions
+//         const employeeContrib = employee.salary * 0.05;
+//         const employerContrb = employee.salary * 0.15;
+
+//         const report = {
+//           employeeID: employee.id,
+//           name: `${employee.first_name} ${employee.last_name}`,
+//           companyName: company ? company.name : "Company does not Exist",
+//           companyAddress: company ? company.address : "Unknown Address",
+//           salary: employee.salary,
+//           employeeContribution: employeeContrib.toFixed(2),
+//           employerContribution: employerContrb.toFixed(2),
+//           nationality: employee.nationality
+//         }
+
+//         return report;
+//     });
+//     console.log("Generate Employee Report", reports)
+//     return reports;
+// };
 
 // Call the function
-employeeGenarateReport(employees, companies);
+// employeeGenarateReport(employees, companies);
