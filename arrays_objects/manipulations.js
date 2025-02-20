@@ -1,6 +1,12 @@
 const myArray = (arr) => {
-  // Now, I want to start updating the array
-  arr[1] = "100"
-  return arr;
+  // Now, I want to sum up all numbers in the array
+  let cur = 0;
+  let results = []
+  for(let i = 0; i < arr.length; i++) {
+    cur += arr[i]
+  }
+  return cur;
+ 
+  
 }
-console.log(myArray(["one", 23, false, 33, true, "banana"]));
+console.log(myArray([2, 23, 3, 33, 9, 10]));
