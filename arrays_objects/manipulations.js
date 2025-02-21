@@ -1,12 +1,6 @@
 const myArray = (arr) => {
-  // Now, I want to sum up all numbers in the array
-  let cur = 0;
-  let results = []
-  for(let i = 0; i < arr.length; i++) {
-    cur += arr[i]
-  }
-  return cur;
- 
+  // Now, I want to sort the array elements in a an ascending order
+  return arr.sort((a, b) => a -b)
   
 }
-console.log(myArray([2, 23, 3, 33, 9, 10]));
+console.log(myArray([2, 23, 3, 33, 9, 10, 100]));
